@@ -1,0 +1,69 @@
+@charset:"utf-8";
+
+
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 16px;
+    
+    
+    
+}
+h1, h2, h3, H4, h5, h6{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    
+}
+h1, h2{
+    color: white;
+}
+
+img{
+    max-width: 100%;
+}
+#top #brand{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#top{
+    height: 100vh; /* ce qui vaut à 100% de la hauteur de l'écran (vh=viewport height)*/
+    background: url(img/banner-adrien-converse.jpg) no-repeat center center;
+    background-size: cover; /*l'image s'ajuste pour remplir tout le bloc*/
+    padding: 30px 15px; /*haut+bas et droite+gauche*/
+    text-align: center;/*centre horizontalement les éléments*/
+}
+
+#menu-principal ul{
+
+    margin: 0;
+    padding-left: 0;/*marge intérieur gauche*/
+    display: flex;/*Le conteneur ul est une flexbox*/
+    justify-content: center;/*les éléments dans le conteneur sont centrés*/
+    list-style: none;/*on masque la puce*/   
+}
+
+#menu-principal a,
+#menu-principal a:visited{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;/*1,5x16 px*/
+    text-transform: uppercase;/*en majuscules*/
+    color: white;
+    text-decoration: none;/*pas de soulignement*/
+    margin: 0 15px;   
+    font-weight: 200;
+}
+
+#portfolio{
+    display: flex;
+}
+.projet{
+    flex-basis: 25%;
+    text-align: center;
+    padding: 15px;
+    
+}
